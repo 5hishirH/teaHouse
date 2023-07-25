@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
-</head>
-<body>
     
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                textPrimary: '#1C1C1C',
+                textSecondary: '#777777',
+              }
+            }
+          }
+        }
+      </script>
+
+      <!-- custom CSS -->
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+        * {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        section {
+            margin-top: 5vw;
+        }
+
+        /* responsive */
+        @media screen and (max-width: 676px) {
+        section {
+                /* background-color: lightblue; */
+                margin-top: 3rem;
+            }
+        }
+      </style>
+</head>
+<body class="w-full flex flex-col items-center">
+    <main class="w-4/5">
+        <section class="flex flex-col lg:flex-row gap-8">
+            <!-- left part -->
+            <div class="flex-1 grid grid-cols-2 grid-rows-3 gap-4 lg:gap-8">
+                <div class="rounded-md" style="background: var(--linear, linear-gradient(270deg, #F00 0%, #FF8938 100%)); opacity: 0.10000000149011612;"></div>
+                <div  class="rounded-md row-span-2 flex justify-center items-center" style="background: rgba(87, 118, 57, 0.10);">
+                    <img class="p-5 lg:py-10" src="images/fresh-2.png" alt="">
+                </div>
+                <div class="rounded-md row-span-2 flex justify-center items-center" style="background: rgba(230, 166, 35, 0.10);">
+                    <img class="p-5 lg:py-10" src="images/fresh-1.png" alt="">
+                </div>
+                <div class="rounded-md" style="background: linear-gradient(90deg, #D9D9D9 0%, rgba(255, 255, 255, 0.00) 100%);"></div>
+            </div>
+            <!-- right part -->
+            <div class="flex-1">
+                <h3 class="text-5xl text-textPrimary font-extrabold">
+                    Great Tea, Freshly
+                    <br>
+                    Presented
+                </h3>
+                <p class="text-base text-textSecondary font-medium mt-5">
+                    The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.
+                </p>
+                <h4 class="text-textPrimary text-xl font-extrabold mt-8">
+                    Unique Taste
+                </h4>
+                <p class="w-4/5 text-base text-textSecondary font-medium mt-3">
+                    A Unique and different style from other teapots gives a luxurious and minimalist impression
+                </p>
+                <h4 class="text-textPrimary text-xl font-extrabold mt-5">
+                    Premium Quality
+                </h4>
+                <p class="w-4/5 text-base text-textSecondary font-medium mt-3">
+                    Premium Quality that makes tea more elegant and more durable when you use it.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
