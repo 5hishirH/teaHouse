@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+section {
+    margin-top: 5vw;
+}
+
+.greatTeaTopGradient {
+    background: var(--linear, linear-gradient(270deg, #F00 0%, #FF8938 100%)); 
+    opacity: 0.10000000149011612;
+}
+
+.greatTeaBottomGradient {
+    background: rgba(230, 166, 35, 0.10);
+}
+
+/* responsive */
+@media screen and (max-width: 676px) {
+section {
+        /* background-color: lightblue; */
+        margin-top: 3rem;
+    }
+}
